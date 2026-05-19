@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Read genuine reviews from EduRise students and parents – real experiences, real transformations." />
+  <title>Testimonials | EduRise Coaching Centre</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .t-card {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 32px 28px;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--gray-light);
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .t-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: rgba(91, 45, 142, .2);
+    }
+
+    .t-card .quote {
+      font-size: 3rem;
+      color: var(--light-bg);
+      font-family: Georgia, serif;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .t-card .stars {
+      color: var(--gold);
+      font-size: .95rem;
+      margin-bottom: 14px;
+    }
+
+    .t-card .text {
+      font-size: .92rem;
+      line-height: 1.8;
+      color: var(--text-muted);
+      font-style: italic;
+      margin-bottom: 22px;
+    }
+
+    .t-card .author {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .t-card .av {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--gradient-card);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-family: var(--font-head);
+      font-weight: 700;
+      font-size: 1.1rem;
+      border: 2px solid var(--gold);
+      flex-shrink: 0;
+    }
+
+    .t-card .info h5 {
+      color: var(--navy);
+      margin-bottom: 2px;
+      font-size: .95rem;
+    }
+
+    .t-card .info span {
+      color: var(--orange);
+      font-size: .78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    .t-card .verified {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      background: var(--light-bg);
+      color: var(--blue);
+      font-size: .72rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 20px;
+      letter-spacing: .3px;
+    }
+
+    @media(max-width:1024px) {
+      .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media(max-width:600px) {
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="announcement-bar"><span class="pulse-dot"></span><span>🎉 New Batch Starting Soon – Limited Seats
+      Available!</span><a href="admission.html">Apply Now</a></div>
+  <nav class="navbar">
+    <div class="container navbar-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+        <div class="logo-text"><strong>EduRise</strong><span>Coaching Centre</span></div>
+      </a>
+      <div class="nav-links"><a href="index.html">Home</a><a href="about.html">About</a><a
+          href="courses.html">Courses</a><a href="faculty.html">Faculty</a><a href="results.html">Results</a><a
+          href="gallery.html">Gallery</a><a href="admission.html" class="nav-cta">Admission</a><a
+          href="contact.html">Contact</a></div>
+      <button class="hamburger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-nav"><button class="close-btn"><i class="fas fa-times"></i></button><a href="index.html">Home</a><a
+      href="about.html">About</a><a href="courses.html">Courses</a><a href="faculty.html">Faculty</a><a
+      href="results.html">Results</a><a href="gallery.html">Gallery</a><a href="admission.html">Admission</a><a
+      href="contact.html">Contact</a></div>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Student & Parent Reviews</h1>
+      <p>Real voices. Real transformations. Real EduRise.</p>
+      <div class="breadcrumb"><a href="index.html">Home</a><i class="fas fa-chevron-right"></i><span>Testimonials</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rating Summary -->
+  <section class="section-pad-sm" style="background:var(--off-white);">
+    <div class="container">
+      <div class="stats-grid" style="max-width:900px;margin:0 auto;">
+        <div class="stat-card reveal delay-1" style="background:var(--white);border:1px solid var(--gray-light);">
+          <div class="stat-icon" style="color:var(--gold);"><i class="fas fa-star"></i></div>
+          <span class="stat-num" style="color:var(--navy);" data-count="4" data-suffix=".9">0</span>
+          <p class="stat-label" style="color:var(--text-muted);">Average Rating</p>
+        </div>
+        <div class="stat-card reveal delay-2" style="background:var(--white);border:1px solid var(--gray-light);">
+          <div class="stat-icon" style="color:var(--orange);"><i class="fas fa-comments"></i></div>
+          <span class="stat-num" style="color:var(--navy);" data-count="320" data-suffix="+">0</span>
+          <p class="stat-label" style="color:var(--text-muted);">Total Reviews</p>
+        </div>
+        <div class="stat-card reveal delay-3" style="background:var(--white);border:1px solid var(--gray-light);">
+          <div class="stat-icon" style="color:var(--blue);"><i class="fas fa-thumbs-up"></i></div>
+          <span class="stat-num" style="color:var(--navy);" data-count="98" data-suffix="%">0</span>
+          <p class="stat-label" style="color:var(--text-muted);">Recommend EduRise</p>
+        </div>
+        <div class="stat-card reveal delay-4" style="background:var(--white);border:1px solid var(--gray-light);">
+          <div class="stat-icon" style="color:var(--purple);"><i class="fas fa-redo"></i></div>
+          <span class="stat-num" style="color:var(--navy);" data-count="60" data-suffix="%">0</span>
+          <p class="stat-label" style="color:var(--text-muted);">Sibling Enrollments</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- All Testimonials -->
+  <section class="section-pad">
+    <div class="container">
+      <div class="section-header center reveal">
+        <p class="section-label">What They Say</p>
+        <h2 class="section-title">Stories of Transformation</h2>
+        <p class="section-subtitle">From struggling students to confident achievers — these are real stories shared by
+          EduRise families.</p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <div class="t-card reveal delay-1">
+          <span class="verified"><i class="fas fa-check-circle"></i> Verified Student</span>
+          <div class="quote">"</div>
+          <div class="stars">★★★★★</div>
+          <p class="text">EduRise completely transformed my daughter's confidence in Mathematics. Before joining, she
+            used to dread exams. After just three months, she scored 94 in her board exams. The teachers here genuinely
+            care about every student — something rare to find today.</p>
+          <div class="author">
+            <div class="av">MG</div>
+            <div class="info">
+              <h5>Meena Ghosh</h5><span>Parent · Class 10 Student</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-card reveal delay-2">
+          <span class="verified"><i class="fas fa-check-circle"></i> Verified Student</span>
+          <div class="quote">"</div>
+          <div class="stars">★★★★★</div>
+          <p class="text">I joined the Spoken English course with zero confidence. Within 3 months, I was speaking
+            fluently in job interviews. I got placed at a reputed BPO company in Kolkata. EduRise literally changed my
+            career trajectory. Forever grateful.</p>
+          <div class="author">
+            <div class="av">SR</div>
+            <div class="info">
+              <h5>Subham Roy</h5><span>Spoken English Graduate, 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-card reveal delay-3">
+          <span class="verified"><i class="fas fa-check-circle"></i> Verified Student</span>
+          <div class="quote">"</div>
+          <div class="stars">★★★★★</div>
+          <p class="text">The competitive exam preparation at EduRise is outstanding. Mock tests every week, detailed
+            solutions, dedicated doubt sessions — I cleared SSC CGL on my very first attempt. The faculty's dedication
+            is unmatched anywhere in Murshidabad.</p>
+          <div class="author">
+            <div class="av">KP</div>
+            <div class="info">
+              <h5>Kaushik Paul</h5><span>SSC CGL Qualifier, 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-card reveal delay-1">
+          <span class="verified"><i class="fas fa-check-circle"></i> Verified Student</span>
+          <div class="quote">"</div>
+          <div class="stars">★★★★★</div>
+          <p class="text">My son was scoring 55–60% in school. After 6 months at EduRise, he scored 89% in the Board
+            exam and got into one of the top colleges in Murshidabad. The small batch size means the teacher actually
+            knows your child's weaknesses and works on them.</p>
+          <div class="author">
+            <div class="av">RP</div>
+            <div class="info">
+              <h5>Ratan Paul</h5><span>Parent · Class 10 Student</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-card reveal delay-2">
+          <span class="verified"><i class="fas fa-check-circle"></i> Verified Student</span>
+          <div class="quote">"</div>
+          <div class="stars">★★★★★</div>
+          <p class="text">I'm a homemaker who always wanted to learn computers but felt it was too late. EduRise's
+            Computer Basics course was so patient and beginner-friendly. Now I manage our family business accounts on
+            Excel and handle all online banking myself. Highly recommend!</p>
+          <div class="author">
+            <div class="av">SC</div>
+            <div class="info">
+              <h5>Sunita Chatterjee</h5><span>Computer Basics Graduate, 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-card reveal delay-3">
+          <span class="verified"><i class="fas fa-check-circle"></i> Verified Student</span>
+          <div class="quote">"</div>
+          <div class="stars">★★★★★</div>
+          <p class="text">What I love about EduRise is how approachable the teachers are. I used to be scared to ask
+            questions in my school, but here, asking doubts is encouraged. My class 12 result — 91% — is proof that this
+            approach works. Thank you EduRise!</p>
+          <div class="author">
+            <div class="av">PB</div>
+            <div class="info">
+              <h5>Puja Banerjee</h5><span>Class 12 Student, CBSE 2024</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-card reveal delay-1">
+          <span class="verified"><i class="fas fa-check-circle"></i> Verified Student</span>
+          <div class="quote">"</div>
+          <div class="stars">★★★★★</div>
+          <p class="text">I enrolled my two children simultaneously — one in class 8 coaching and the other in Spoken
+            English. Both are flourishing. The sibling discount was a bonus. EduRise is genuinely affordable for quality
+            this high. Worth every rupee spent.</p>
+          <div class="author">
+            <div class="av">AB</div>
+            <div class="info">
+              <h5>Anita Biswas</h5><span>Parent · Two Children Enrolled</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-card reveal delay-2">
+          <span class="verified"><i class="fas fa-check-circle"></i> Verified Student</span>
+          <div class="quote">"</div>
+          <div class="stars">★★★★★</div>
+          <p class="text">I was preparing for Railway NTPC for two years without success. Joined EduRise's Competitive
+            Exam batch and cracked it in the very next attempt. The tricks for reasoning and the shortcut methods for
+            maths are genuinely game-changing. Highly recommended!</p>
+          <div class="author">
+            <div class="av">DM</div>
+            <div class="info">
+              <h5>Dipankar Mondal</h5><span>Railway NTPC Qualifier, 2023</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="t-card reveal delay-3">
+          <span class="verified"><i class="fas fa-check-circle"></i> Verified Student</span>
+          <div class="quote">"</div>
+          <div class="stars">★★★★★</div>
+          <p class="text">The Basic Programming course at EduRise was a life-changer for me. I came with zero coding
+            knowledge and left with Python basics and a freelancing portfolio. I now earn ₹15,000/month from freelance
+            projects alongside my regular job. Incredible ROI!</p>
+          <div class="author">
+            <div class="av">TG</div>
+            <div class="info">
+              <h5>Tanmoy Guha</h5><span>Basic Programming Graduate, 2024</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Testimonials Placeholder -->
+  <section class="section-pad" style="background:var(--gradient-light);">
+    <div class="container">
+      <div class="section-header center reveal">
+        <p class="section-label">Student Voices</p>
+        <h2 class="section-title">Watch Their Stories</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
+        <div class="reveal delay-1"
+          style="background:var(--gradient-card);border-radius:var(--radius-md);height:220px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;cursor:pointer;transition:var(--transition);"
+          onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+          <div
+            style="width:60px;height:60px;background:rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.5rem;border:2px solid rgba(255,255,255,.4);">
+            <i class="fas fa-play"></i></div>
+          <div style="color:#fff;text-align:center;">
+            <p style="font-weight:700;color:#fff;margin-bottom:4px;">Arjun's Journey</p>
+            <p style="font-size:.82rem;color:rgba(255,255,255,.7);">From 62% to 97.8% — Class 10 Board</p>
+          </div>
+        </div>
+        <div class="reveal delay-2"
+          style="background:linear-gradient(135deg,#F97316,#F5B700);border-radius:var(--radius-md);height:220px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;cursor:pointer;transition:var(--transition);"
+          onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+          <div
+            style="width:60px;height:60px;background:rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.5rem;border:2px solid rgba(255,255,255,.4);">
+            <i class="fas fa-play"></i></div>
+          <div style="color:#fff;text-align:center;">
+            <p style="font-weight:700;color:#fff;margin-bottom:4px;">Kaushik's Success</p>
+            <p style="font-size:.82rem;color:rgba(255,255,255,.8);">SSC CGL cleared on first attempt</p>
+          </div>
+        </div>
+        <div class="reveal delay-3"
+          style="background:linear-gradient(135deg,#059669,#10B981);border-radius:var(--radius-md);height:220px;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;cursor:pointer;transition:var(--transition);"
+          onmouseover="this.style.transform='scale(1.03)'" onmouseout="this.style.transform='scale(1)'">
+          <div
+            style="width:60px;height:60px;background:rgba(255,255,255,.2);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.5rem;border:2px solid rgba(255,255,255,.4);">
+            <i class="fas fa-play"></i></div>
+          <div style="color:#fff;text-align:center;">
+            <p style="font-weight:700;color:#fff;margin-bottom:4px;">Subham's Placement</p>
+            <p style="font-size:.82rem;color:rgba(255,255,255,.8);">Zero to BPO placement via Spoken English</p>
+          </div>
+        </div>
+      </div>
+      <p style="text-align:center;margin-top:20px;font-size:.85rem;color:var(--text-muted);">📱 Video testimonials
+        available on our YouTube channel and WhatsApp</p>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Join Thousands of Satisfied Students</h2>
+      <p>Your success story starts with one simple step. Enroll today.</p>
+      <div class="cta-btns"><a href="admission.html" class="btn btn-primary btn-lg"><i class="fas fa-paper-plane"></i>
+          Apply Now</a><a href="contact.html" class="btn btn-outline btn-lg"><i class="fas fa-phone-alt"></i> Talk to
+          Us</a></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <div class="footer-logo nav-logo">
+            <div class="logo-icon"><i class="fas fa-graduation-cap"></i></div>
+            <div class="logo-text"><strong>EduRise</strong><span>Coaching Centre</span></div>
+          </div>
+          <p>Transforming students into achievers since 2016.</p>
+          <div class="social-links"><a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a><a href="#"
+              class="social-link"><i class="fab fa-instagram"></i></a><a href="#" class="social-link"><i
+                class="fab fa-youtube"></i></a><a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a></div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <div class="footer-links"><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a><a
+              href="about.html"><i class="fas fa-chevron-right"></i> About</a><a href="courses.html"><i
+                class="fas fa-chevron-right"></i> Courses</a><a href="admission.html"><i
+                class="fas fa-chevron-right"></i> Admission</a><a href="contact.html"><i
+                class="fas fa-chevron-right"></i> Contact</a></div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Courses</h4>
+          <div class="footer-links"><a href="course-details.html"><i class="fas fa-chevron-right"></i> Spoken
+              English</a><a href="course-details.html"><i class="fas fa-chevron-right"></i> Computer Basics</a><a
+              href="course-details.html"><i class="fas fa-chevron-right"></i> Class 8–10</a><a
+              href="course-details.html"><i class="fas fa-chevron-right"></i> Competitive Exams</a></div>
+        </div>
+        <div>
+          <h4 class="footer-heading">Contact</h4>
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Station Road, Baharampur —
+              742101</span></div>
+          <div class="footer-contact-item"><i class="fas fa-phone-alt"></i><span>+91 62954 70093</span></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@edurise.in</span></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 EduRise Coaching Centre. All rights reserved.</p>
+        <p>Made With Love <span class="heart">❤️</span> for EduRise Students</p>
+      </div>
+    </div>
+  </footer>
+  <a href="https://wa.me/916295470093" class="floating-whatsapp"><i class="fab fa-whatsapp"></i></a>
+  <a href="tel:+916295470093" class="floating-call"><i class="fas fa-phone-alt"></i></a>
+  <button class="scroll-top"><i class="fas fa-chevron-up"></i></button>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
